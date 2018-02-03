@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2k3 Technologies Web Applications Development</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="./css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><img src="./images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td height="70" colspan="3" class="logo" nowrap="nowrap">2k3 Technologies <span class="tagline">| Web Applications Development</span></td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="705" colspan="3" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td class="navText" align="center" nowrap="nowrap"><a href="index.html">HOME</a></td>
+          <td class="navText" align="center"><a href="webwork.html">WEB SOLUTIONS</a></td>
+          <td class="navText" align="center"><a href="consulting.html">CONSULTING</a></td>
+          <td class="navText" align="center"><a href="services.html">SERVICES</a></td>
+          <td class="navText" align="center"><a href="about-us.html">ABOUT US</a></td>
+          <td class="navText" align="center"><a href="contact.html">CONTACT US</a></td>
+          <td class="navText" align="center"><a href="links.html">LINKS</a></td>
+        </tr>
+      </table>	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td width="230" colspan="2" valign="top" bgcolor="#26354A"><img src="./images/web.jpg" alt="Home Page Image" width="230" height="286" border="0" /><br />
+	<table border="0" cellspacing="0" cellpadding="0" width="230">
+		<tr>
+		<td width="230" class="sidebarText" id="padding">
+			<a href="./webapps/benefits.html">Benefits &gt;</a><br />
+			<a href="./webapps/arch.html">Architecture &gt;</a><br />
+			<a href="./webapps/web_techs.html">Technologies &gt;</a><br />
+			<a href="./webapps/osf.html">Open Source &gt;</a><br />
+		&nbsp;<br />		</td>
+		</tr>
+	</table>	</td>
+	<td width="50" valign="top"><img src="./images/mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+	<td width="440" valign="top"><br />
+	<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="440">
+		<tr>
+		<td class="pageName">Evolve Your Desktop</td>
+		</tr>
+
+		<tr>
+		<td class="bodyText">
+			<p>It's a proven fact that over time, maintenance represents the largest share of the total cost of ownership (TCO)
+			associated with a system of software. The 
+			<a href="http://www.sei.cmu.edu/str/descriptions/mos_body.html" target="_blank" class="bodyTextUL">Carnegie Mellon Software Engineering Institute</a>
+			(SEI), known world-wide for their Software Capability & Maturity Modelling methodologies quotes figures as low as 40% 
+			and as high as 80% of the total cost.</p>
+			
+			<p>The time and effort required to maintain distributed client/server systems across multiple desktops factors 
+			significantly into these end figures.  The number of application installations and the number of its maintenance releases
+			over its lifetime combine to generate maintenance costs that are directly porportional to the scalability and deployment
+			of the application.</p>
+
+			<p>(The good news is:  I just saved 15% on my car insurance rates with <a href="http://www.geico.com" target="blank" class="bodyTextUL">Geico</a>).</p>
+			
+			<p>It's also been shown that almost 80% of the large systems incurring these inordinately high development/maintenance cost
+			ratios were built without the benefits of structured programming, and that only a very small percentage have taken advantage
+			of the drastically decreased maintenance-related costs that are the direct result of utilizing object-oriented technologies.</p>
+			
+			<p>Web applications development offers some very real and tangible results geared towards the reduction of the overall TCO
+			associated with your mission-critical applications.  2k3 Technologies has the experience and the expertise in object-oriented
+			systems development of java-based web applications to meet all your requirements.</p>
+			
+			<p>Click on the links to the left or <a href="contact.html">contact us</a> to learn more.</p>
+		</td>
+		</tr>
+	</table>
+	 <br />
+	&nbsp;<br />	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td width="15"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="215"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="50"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="440"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="40"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" align="left" id="footernav">&copy; 2012 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Get Google Chrome</a> |
+		<a href="./sitemap.html">Site Map</a> | <span id="txt" class="footernav"></span></td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

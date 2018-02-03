@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+
+</head>
+
+<body onload="startTime();">
+	<tr>
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" align="left" id="footernav">Copyright &copy; 2006 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="http://www.mozilla.com/firefox/" target="_blank">Get Firefox</a> |
+		<span id="txt" class="footernav"></span></td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<title>2k3 Technologies Application Development Contact Us</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="./css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><img src="./images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td height="70" colspan="3" class="logo" nowrap="nowrap">2k3 Technologies <span class="tagline">| Contact Us </span></td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="705" colspan="3" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td class="navText" align="center"><a href="index.html">HOME</a></td>
+          <td class="navText" align="center"><a href="webwork.html">WEB SOLUTIONS</a></td>
+          <td class="navText" align="center"><a href="consulting.html">CONSULTING</a></td>
+          <td class="navText" align="center"><a href="services.html">SERVICES</a></td>
+          <td class="navText" align="center"><a href="about-us.html">ABOUT US</a></td>
+          <td class="navText" align="center"><a href="contact.html">CONTACT US</a></td>
+        </tr>
+      </table>	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td width="230" colspan="2" valign="top" bgcolor="#26354A"><img src="./images/keyboard_gs.jpg" alt="Web Site Design" width="230" height="286" border="0" /><br />
+	<table border="0" cellspacing="0" cellpadding="0" width="230">
+		<tr>
+		<td width="230" class="sidebarText" id="padding" align="center">
+			&nbsp;<br />
+			<a name="title">2k3 Technologies</a><br />
+			<a name="dept">Sales & Service</a><br />
+			<a name="days">Monday - Friday</a><br />
+			<a name="hours">8:00 am - 5:00 pm</a><br />
+			<a name="phone">325.338.6906</a><br />
+			&nbsp;<br />
+		</td>
+		</tr>
+	</table>	</td>
+	<td width="50" valign="top"><img src="./images/mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+	<td width="440" valign="top"><br />
+	<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="440">
+		<tr>
+			<td class="pageName">Contact Us<br />
+				<span class="bodyText">Please use the form below to indicate your areas of interest.  Upon submission, 
+				I will contact you within 1 business day.  Thank you!</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+        <table width="440" border="0" cellpadding="0" cellspacing="0" align="center">
+          <form name="mailform" action="../cgi-bin/FormMail.pl" method="post">
+            <tr>
+              <td width="440" colspan="4">
+                <input type="hidden" name="recipient" value="webinfo@2k3technologies.com" />
+                <input type="hidden" name="subject" value="Information Request" />
+                <input type="hidden" name="required" value="realname,email" />
+                <input type="hidden" name="print_blank_fields" value="1" />
+								<input type="hidden" name="redirect" value="http://www.2k3technologies.com/confirm_submit.html" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+								<table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+										<td class="bodyText" width="140" align="left" style="color:#ff0000; font-weight:bold;">Name</td>
+              			<td align="left" width="300">&nbsp;&nbsp;
+              			  <input type="text" class="bodyText" name="realname" value="" size="40" maxlength="70"/></td>
+									</tr>
+								</table>
+							</td>	
+            </tr>
+            <tr>
+					 		<td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="140" align="left">Company</td>
+      			        <td align="left" width="300">&nbsp;&nbsp;
+      			          <input type="text" class="bodyText" name="coname" value="" size="40" maxlength="70"/></td>
+									</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+ 			              <td class="bodyText" width="140" align="left" style="color:#ff0000; font-weight:bold;">Email Address</td>
+              			<td align="left" width="300">&nbsp;&nbsp;
+              			  <input type="text" class="bodyText" name="email" value="" size="40" maxlength="70"/></td>
+									</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+              			<td class="bodyText" width="140" align="left">Daytime Telephone</td>
+              			<td align="left" width="300">&nbsp;&nbsp;
+											<input type="text" class="bodyText" name="dayphone" value="" size="20" maxlength="25"/></td>
+									</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left" style="border-bottom: 1px solid #26354A">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="140" align="left">Evening Telephone</td>
+      			        <td align="left" width="300">&nbsp;&nbsp;
+											<input type="text" class="bodyText" name="evephone" value="" size="20" maxlength="25"/></td>
+									</tr>
+								</table><br />
+							</td>	
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+								Contact Details
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+              			<td class="bodyText" width="80" align="left">Preference</td>
+              			<td align="left" class="bodyText" width="360">
+											<input type="radio" name="contactType" value="Email" />Email&nbsp;<input type="radio" name="contactType" value="Telephone" />Telephone</td>
+									</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left" style="border-bottom: 1px solid #26354A">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+              			<td class="bodyText" width="80" align="left">Best Time</td>
+              			<td align="left" class="bodyText" width="360">
+											<input type="radio" name="calltime" value="8 am - 12 pm" />8 AM - 12 PM&nbsp;<input type="radio" name="calltime" value="12 pm - 6 pm" />12 PM - 6 PM&nbsp;<input type="radio" name="calltime" value="6 pm - 9 pm" />6 PM - 9 PM&nbsp;<input type="radio" name="calltime" value="Anytime" />Anytime</td>
+  								</tr>
+								</table>
+							</td>            
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">Please select <span style="color:#ff0000; font-weight:bold;">one or more</span> of the following to
+							indicate your area(s) of interest:<br />
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="newwebdesign" checked/>&nbsp;Website Design</td>
+       			        <td align="left" class="bodyText" width="35%"><input type="checkbox" name="webmaintenace" />&nbsp;Website Maintenance</td>
+       			        <td align="left" class="bodyText"><input type="checkbox" name="html" />&nbsp;HTML/DHTML</td>
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+              			<td class="bodyText" width="35%" align="left"><input type="checkbox" name="javascripting" />&nbsp;Java Scripting</td>
+              			<td align="left" class="bodyText" width="35%"><input type="checkbox" name="vbscripting" />&nbsp;VB Scripting</td>
+       			        <td align="left" class="bodyText"><input type="checkbox" name="flash" />&nbsp;Flash</td>
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="php" />&nbsp;PHP</td>
+      			        <td align="left" class="bodyText" colspan="2" width="65%"><input type="checkbox" name="ra" />&nbsp;Requirements Analysis</td>
+       			        <!-- <td align="left" class="bodyText">&nbsp;</td> -->
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="hosting" />&nbsp;Web Hosting</td>
+      			        <td align="left" class="bodyText" width="35%"><input type="checkbox" name="cgiperl" />&nbsp;CGI/Perl</td>
+       			        <td align="left" class="bodyText"><input type="checkbox" name="jsp" />&nbsp;JSP</td>
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="smalltalk" />&nbsp;Smalltalk Programming</td>
+      			        <td align="left" class="bodyText" width="35%"><input type="checkbox" name="java" />&nbsp;Java Programming</td>
+       			        <td align="left" class="bodyText"><input type="checkbox" name="cees" />&nbsp;C/C++/C#/.Net</td>
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="ooad" />&nbsp;OOA/D</td>
+      			        <td align="left" class="bodyText" colspan="2" width="65%"><input type="checkbox" name="was" />&nbsp;Web Application Solutions & Servers</td>
+       			        <!-- <td align="left" class="bodyText">&nbsp;</td> -->
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" width="440" class="bodyText" align="left" style="border-bottom: 1px solid #26354A">
+							  <table width="440" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+			              <td class="bodyText" width="35%" align="left"><input type="checkbox" name="mysql" />&nbsp;MySQL</td>
+      			        <td align="left" class="bodyText" width="35%"><input type="checkbox" name="plsql" />&nbsp;PL/SQL - Oracle</td>
+       			        <td align="left" class="bodyText">&nbsp;</td>
+              		</tr>
+								</table>
+							</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="bodyText" align="left">Additional Comments</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="bodyText" align="left">
+                <textarea name="comments" rows="5" cols="60" class="detailText"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" width="550" class="bodyText" align="center"><br /><input type="submit" class="bodyText" name="submit" value="Submit" /><input type="reset" class="bodyText" name="reset" value="Reset" /><input type="button" class="bodyText" name="cancel" value="Cancel" onclick="javascript:window.location.href='http://www.2k3technologies.com';" /></td>
+            </tr>
+          </form>
+        </table>
+		
+			</td>
+		</tr>
+	</table>
+	 <br />
+	&nbsp;<br />	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td width="15"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="215"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="50"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="440"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="40"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" align="left" id="footernav">&copy; 2012 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Get Google Chrome</a> |
+		<a href="./sitemap.html">Site Map</a> | <span id="txt" class="footernav"></span>
+		</td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

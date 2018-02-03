@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>2k3 Technologies Application Development Consulting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="./css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><img src="./images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td height="70" colspan="3" class="logo" nowrap="nowrap">2k3 Technologies <span class="tagline">| Success! </span></td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="705" colspan="3" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td class="navText" align="center"><a href="index.html">HOME</a></td>
+          <td class="navText" align="center"><a href="webwork.html">WEB SOLUTIONS</a></td>
+          <td class="navText" align="center"><a href="consulting.html">CONSULTING</a></td>
+          <td class="navText" align="center"><a href="services.html">SERVICES</a></td>
+          <td class="navText" align="center"><a href="partners.html">PARTNERS</a></td>
+          <td class="navText" align="center"><a href="about-us.html">ABOUT US</a></td>
+          <td class="navText" align="center"><a href="contact.html">CONTACT US</a></td>
+        </tr>
+      </table>	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td width="230" colspan="2" valign="top" bgcolor="#26354A"><img src="./images/keyboard_gs.jpg" alt="Web Site Design" width="230" height="286" border="0" /><br />
+	<table border="0" cellspacing="0" cellpadding="0" width="230">
+		<tr>
+		<td width="230" class="sidebarText" id="padding" align="center">
+			&nbsp;<br />
+			<a name="title">2k3 Technologies</a><br />
+			<a name="dept">Sales & Service</a><br />
+			<a name="days">Monday - Saturday</a><br />
+			<a name="hours">8:00 am - 5:00 pm</a><br />
+			<a name="phone">325.232.6587</a><br />
+			&nbsp;<br />
+		</td>
+		</tr>
+	</table>	</td>
+	<td width="50" valign="top"><img src="./images/mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+	<td width="440" valign="top"><br />
+	<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="440">
+		<tr>
+			<td class="pageName" align="center">Thank You!</td>
+		</tr>
+		<tr>
+			<td class="bodyText" align="left">
+				<br />Your request has been submitted. We will be in contact with you shortly.<br />
+        &nbsp;<br /><div align="center"><a href="./index.html">Home</a></div>
+			</td>
+		</tr>
+	</table>
+	 <br />
+	&nbsp;<br />	
+	</td>
+	<td width="40">&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td width="15"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="215"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="50"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="440"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="40"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" align="left" id="footernav">Copyright &copy; 2006 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="http://www.mozilla.com/firefox/" target="_blank">Get Firefox</a> |
+		<span id="txt" class="footernav"></span></td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

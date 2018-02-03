@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<title>2k3 Technologies Software Development & Consulting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<META name="verify-v1" content="XZAdVwlB51OxCdvo7ihauu5Xaq3yO5NymsUyHZI5kY8=" />
+<meta name="Description" content="2k3 Technologies is a software solutions and service provider specializing in custom tailored applications development.  Whether you're
+						looking for client/server or web-based solutions, or you want to maximize the leverage of your existing legacy applications, 2k3 Technologies has the expertise
+						to meet your needs.  With over 20 years of experience in Object-Oriented Systems Development, we excel in Java-based client/server applications
+						development and Java-based Web Application solutions.  Offering a full range of software engineering expertise, we can design, develop and deploy your mission
+						critical business applications to your corporate intranet and also provide the same services to deploy your external customer-oriented 
+						applications securely via the internet." />
+<link rel="stylesheet"  type="text/css" href="./css/default.css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26759640-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" ><img src="images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td colspan="5" width="100%" height="70" class="logo">2k3 Technologies <span class="tagline">| Software Development & Consulting </span></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="6" width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="6" width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" height="24">
+			<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td class="navText" align="center"><a href="webwork.html">WEB SOLUTIONS</a></td>
+          <td class="navText" align="center"><a href="consulting.html">CONSULTING</a></td>
+          <td class="navText" align="center"><a href="services.html">SERVICES</a></td>
+<!--					<td class="navText" align="center"><a href="partners.html">PARTNERS</a></td> -->
+          <td class="navText" align="center"><a href="about-us.html">ABOUT US</a></td>
+          <td class="navText" align="center"><a href="contact.html">CONTACT US</a></td>
+          <td class="navText" align="center"><a href="links.html">LINKS</a></td>
+        </tr>
+      </table>		</td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td colspan="6" width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+		<td colspan="6" width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td colspan="2" width="230" valign="top" bgcolor="#26354A"><img src="./images/homepage_1.jpg" alt="2k3 Technologies Application Development Consulting" width="230" height="286" border="0" />
+		  <br />
+			<table border="0" cellspacing="0" cellpadding="0" width="230">
+				<tr>
+					<td width="230" class="sidebarText" id="padding">
+						<a href="current_projects.html">Clients Area &gt;</a><br />
+						<a href="news.html">News &gt;</a><br />
+						<!-- <a href="products.html">Products &gt;</a><br /> -->
+						<!--begin--><br />
+						2k3 Technologies is a top <a href="http://www.digitalspinner.com/webdesign.b.507.g.10105.html?web_design_region=texas&web_design_city=boerne&page=1">Boerne, TX website design firm</a> on DigitalSpinner.com!
+						<!--end--><br /><br />
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="50" valign="top"><img src="images/mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+		<td width="440" valign="top"><br /><br />
+			<table border="0" cellspacing="0" cellpadding="0" width="440">
+				<tr>
+					<td width="440" class="pageName">Design. Build. Operate.</td>
+				</tr>
+				<tr>
+					<td width="440" class="bodyText">
+						<p>2k3 Technologies is a software solutions and service provider specializing in custom tailored applications development.  Whether you're
+						looking for client/server or web-based solutions, or you want to maximize the leverage of your existing legacy applications, 2k3 Technologies has the expertise
+						to meet your needs.  With over 20 years of experience in Object-Oriented Systems Development, we excel in Java-based client/server applications
+						development and Java-based Web Application solutions.  Offering a full range of software engineering expertise, we can design, develop and deploy your mission
+						critical business applications to your corporate intranet and also provide the same services to deploy your external customer-oriented 
+						applications securely via the internet.</p>
+						<p>With over 25 years of experience developing applications for Top Fortune 500 companies, 2k3 Technologies has the expertise to build
+						your solutions efficiently and expertly.</p>
+					</td>
+				</tr>
+			</table>
+			<!--<br />&nbsp; -->
+		</td>
+		<td width="40">&nbsp;</td> 
+		<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td width="15"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="215"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="50"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="440"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="40"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="100%"><img src="images/mm_spacer.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;</td>
+		<td colspan="3" width="705" align="left" id="footernav">&copy; 2012 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Get Google Chrome</a> |
+		<a href="./site_map.html">Site Map</a> | <span id="txt" class="footernav"></span></td>
+		<td width="40">&nbsp;</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

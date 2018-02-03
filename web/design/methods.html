@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2k3 Technologies Website Design Methods</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();"><a name="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><img src="../images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td height="70" width="745" colspan="2" class="logo" nowrap="nowrap">2k3 Technologies<span class="tagline"> | Website Development Methods</span></td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="../images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="745" colspan="2" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td class="navText" align="center" nowrap="nowrap"><a href="../index.html">HOME</a></td>
+      		<td class="navText" align="center"><a href="../webwork.html">WEB SOLUTIONS</a></td>
+      		<td class="navText" align="center"><a href="../consulting.html">CONSULTING</a></td>
+      		<td class="navText" align="center"><a href="../services.html">SERVICES</a></td>
+      		<td class="navText" align="center"><a href="../about-us.html">ABOUT US</a></td>
+      		<td class="navText" align="center"><a href="../contact.html">CONTACT US</a></td>
+          <td class="navText" align="center"><a href="../links.html">LINKS</a></td>
+        </tr>
+      </table>	</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="../images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td width="15" valign="top">&nbsp;</td>
+	<td width="35"><img src="../images/mm_spacer.gif" alt="" width="35" height="1" border="0" /></td>
+	<td width="710" valign="top"><br />
+	&nbsp;<br />
+	<table border="0" cellspacing="0" cellpadding="2" width="710">
+		<tr>
+		<td class="pageName" width="500"><a href="works.html" class="pageName">Designs</a> &bull; Web Methods &bull; <a href="logos.html" class="pageName">Logos</a></td>
+		</tr>
+
+		<tr>
+		<td class="bodyText">
+			Designing and building a website is an interactive process. At 2k3 Technologies, we work closely with you from start to
+			finish and beyond to ensure that the end result is a direct reflection of your vision.  We use a simple straight-forward
+			process that is described in the sections below.<br />
+			
+			<ul>
+				<li><a href="#design">Web Site Requirements Analysis and Design</a></li>
+				<li><a href="#impl">Web Site Implementation</a></li>
+				<li><a href="#dname">Domain Name & Site Hosting</a></li>
+				<li><a href="#maint">Web Site Maintenance</a></li>
+			</ul>
+			
+			<p>Are you ready?  <a href="../contact.html">Contact us</a> now to learn more or get started!</p>
+
+			<p><span class="bodyTextUL"><a id="design" class="bodyTextUL">Web Site Requirements Analysis &amp; Design</a></span>&nbsp;[ <a href="#top">back to top</a> ]<br />Our designers will work with you to determine the 'look and feel' of your site, using a process of continuous 
+			feedback from you and refinement to identify the page layouts, color scheme, image utilization, and interactive 
+			components, if any. During the design process we will assess the need for custom graphics designs, such as logo 
+			development and branding, as well as any digital photography requirements which would enhance the appeal of your 
+			site.  Content is identified and the navigational shape of the website will begin to emerge.<br />
+			The results of the design process will be a conceptual site map, showing the structure and form of the website as
+			well as conceptual site designs using Adobe Photoshop work products as baselines.</p>
+			
+			<p><span class="bodyTextUL"><a id="impl" class="bodyTextUL">Web Site Implementation</a></span>&nbsp;[ <a href="#top">back to top</a> ]<br />Upon approval of the final design, the actual implementation of your website will begin.  A site skeleton 
+			will be built to verify the navigational behavior of the site pages and then site content will be implemented. During 
+			implementation, your site will be accessible via our test web servers so you can access it and validate it as it
+			evolves.  You will also be able to check on the status of your web site and view any open issues 
+			via our <a href="../current_projects.html">Current Projects</a> page which is accessible by authorized 
+			client representatives.</p>
+			
+			<p><span class="bodyTextUL"><a id="dname" class="bodyTextUL">Domain Name &amp; Site Hosting</a></span>&nbsp;[ <a href="#top">back to top</a> ]<br />If it is determined during the inital discussions of your site requirements that you need a domain name for your site, we will 
+			secure the domain name for you so that when you're ready to launch your site, everything will be in place for you to 
+			do so.  We will also arrange the hosting of your site, should you so desire, through one of our 
+			<a href="../partners.html">preferred partner providers</a>.</p>
+			
+			<p><span class="bodyTextUL"><a id="maint" class="bodyTextUL">Web Site Maintenance</a></span>&nbsp;[ <a href="#top">back to top</a> ]<br />After your site is launched and running World Wide Web, we will, at your discretion, provide site 
+			maintenance services.  Site maintenance is an important aspect of owning a website and is geared towards ensuring 
+			that the content on your site is accurate, fresh and up-to-date - all of which are decisive factors in how well your site ranks 
+			with major search engines.  Maintenance services are also intended to allow your site to grow and change as your 
+			business evolves.</p>
+			
+
+		</td>
+		</tr>
+	</table>
+	 <br />	</td>
+	<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;<br />
+		&nbsp;<br />
+		</td>
+    <td colspan="2" width="745" align="left" id="footernav">&copy; 2012 2k3 Technologies, All rights reserved |
+		<a href="../privacy.html">Privacy Policy</a> | <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Get Google Chrome</a> |
+		<a href="../sitemap.html">Site Map</a> | <span id="txt" class="footernav"></span></td>
+		<td width="100%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+

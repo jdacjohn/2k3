@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2k3 Technologies Application Development Consulting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><a name="top"><img src="../../images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></a></td>
+	<td height="70" colspan="2" width="745" class="logo" nowrap="nowrap">2k3 Technologies <span class="tagline">| Shaw Reporting Services</span></td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="../../images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="745" colspan="2" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+    <tr>
+      <td class="navText" align="center"><a href="../../index.html">HOME</a></td>
+      <td class="navText" align="center"><a href="../../webwork.html">WEB SOLUTIONS</a></td>
+      <td class="navText" align="center"><a href="../../consulting.html">CONSULTING</a></td>
+      <td class="navText" align="center"><a href="../../services.html">SERVICES</a></td>
+			<td class="navText" align="center"><a href="../../partners.html">PARTNERS</a></td>
+      <td class="navText" align="center"><a href="../../about-us.html">ABOUT US</a></td>
+      <td class="navText" align="center"><a href="../../contact.html">CONTACT US</a></td>
+        </tr>
+      </table>	</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="../../images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="../../images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+		<td width="15" valign="top">&nbsp;</td>
+		<td width="35"><img src="../../images/mm_spacer.gif" alt="" width="35" height="1" border="0" /></td>
+		<td width="710" valign="top"><br />
+			&nbsp;<br />
+			<table border="0" cellspacing="0" cellpadding="2" width="710">
+				<tr>
+					<td class="pageName">Website Design Status</td>
+				</tr>
+
+				<tr>
+					<td class="bodyText">Last Updated: 04/17/2006</td>
+				</tr>
+				<tr>
+					<td class="bodyText">
+						<p>This page is intended to provide an overview of your new website status.  If you have any questions about the information contained on this page, please email 
+						your <span id="tablenav"><a href="mailto:jarnold@2k3technologies.com">Primary Contact</a></span> for this project.</p>
+						<p><span class="subHeader">Website Design</span><br />Please click on the links below to view the site conceptual designs:<br />
+						&nbsp;&nbsp;<a href="./images/srs1.jpg" class="bodyTextUL" target="_blank">Site Design 1</a><br />
+						&nbsp;&nbsp;<a href="./images/srs2.jpg" class="bodyTextUL" target="_blank">Site Design 2</a><br />
+						</p>
+						<p><span class="subHeader">Project Issues:</span><br />
+						None at this time.
+						</p>
+						<br />
+					</td>
+				</tr>
+			</table>
+	 		<br />	
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td width="15">&nbsp;</td>
+    <td colspan="2" width="745" align="left" id="footernav">Copyright &copy; 2006 2k3 Technologies, All rights reserved |
+		<a href="../../privacy.html">Privacy Policy</a> | <a href="http://www.mozilla.com/firefox/">Get Firefox</a> |
+		<span id="txt" class="footernav"></span></td>
+		<td width="100%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+

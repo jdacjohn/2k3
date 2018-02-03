@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2k3 Technologies Links &amp; Resources</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="./css/default.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+//var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+//var TODAY = monthhname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var TODAY = checkTime(d.getMonth() + 1) + "." + checkTime(d.getDate()) + "." + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var ampm = getAMPM(h);
+// add a zero in front of numbers<10
+h = checkPM(h);
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=TODAY+"&nbsp;&nbsp;"+h+":"+m+":"+s+"&nbsp;"+ampm+"&nbsp;"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+function getAMPM(i)
+{
+var ampm = "a.m.";
+if (i>=12) 
+  {ampm = "p.m."}
+  return ampm;
+}
+function checkPM(i)
+{
+if (i>12)
+  {i = i - 12}
+  return i;
+}
+</script>
+</head>
+
+<body bgcolor="#64748B" onload="startTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#26354A">
+	<td width="15" nowrap="nowrap"><img src="./images/mm_spacer.gif" alt="" width="15" height="1" border="0" /></td>
+	<td height="70" colspan="2" class="logo" nowrap="nowrap">2k3 Technologies <span class="tagline">| Links</span></td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FFCC00">
+	<td width="15" nowrap="nowrap">&nbsp;</td>
+	<td width="705" colspan="2" height="24">
+	<table border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+      		<td class="navText" align="center"><a href="index.html">HOME</a></td>
+      		<td class="navText" align="center"><a href="webwork.html">WEB SOLUTIONS</a></td>
+      		<td class="navText" align="center"><a href="consulting.html">CONSULTING</a></td>
+      		<td class="navText" align="center"><a href="services.html">SERVICES</a></td>
+      		<td class="navText" align="center"><a href="about-us.html">ABOUT US</a></td>
+      		<td class="navText" align="center"><a href="contact.html">CONTACT US</a></td>
+        </tr>
+      </table>	</td>
+	<td width="100%">&nbsp;</td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#FF6600">
+	<td colspan="4"><img src="./images/mm_spacer.gif" alt="" width="1" height="4" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td colspan="4"><img src="./images/mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
+	</tr>
+
+	<tr bgcolor="#D3DCE6">
+	<td width="15" valign="top">&nbsp;</td>
+	<td width="35"><img src="./images/mm_spacer.gif" alt="" width="35" height="1" border="0" /></td>
+	<td width="710" valign="top"><br />
+	&nbsp;<br />
+	<table border="0" cellspacing="0" cellpadding="2" width="610">
+        <tr>
+          <td colspan="7" class="pageName">Links and Resources</td>
+        </tr>
+		<tr>
+      <td width="22%" height="110"><a href="http://www.classicwireless.org" target="_blank" title="Classic Mobile Radios, Accessories, and Infrastructure Specialists"><img src="./images/links_classicwireless.gif" alt="Classic Wireless, LLC" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="110"><a href="http://www.mozilla.org" target="_blank" title="Mozilla - Home of Firefox and Thunderbird"><img src="./images/links_mozilla.jpg" alt="Classic Wireless, LLC" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="110"><a href="http://www.mozilla.com/thunderbird" target="_blank" title="Thunderbird 1.5 - Reclaim your Inbox"><img src="./images/links_thunderbird.jpg" alt="Thunderbird" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="110"><a href="http://www.devguru.org" target="_blank"><img src="./images/links_devguru.jpg" alt="DevGuru.com" width="110" height="110" border="0" /></a></td>
+    </tr>
+		<tr>
+      <td valign="top" class="detailText"><a href="http://www.classicwireless.org" target="_blank">Classic Wireless</a><br />&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://www.mozilla.org" target="_blank">Mozilla.org</a><br />&nbsp;</td>
+		 	<td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://www.mozilla.com/thunderbird" target="_blank">Get Thunderbird</a><br />&nbsp;</td>
+		 	<td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://www.devguru.org">DevGuru</a><br />&nbsp;</td>
+    </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+		<tr>
+      <td height="110"><a href="http://www.cepolina.com/freephoto" target="_blank" title="Free Photos and Stock Photos"><img src="./images/links_cepolina.gif" alt="Free Photos and Stock Photos" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td height="110"><a href="http://www.mozilla.com/firefox" target="blank" title="Get Firefox - The open source alternative to the Vole Patrol"><img src="./images/links_firefox.jpg" alt="Get Firefox - The open source alternative the Vole Patrol" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td height="110"><a href="http://www.mysql.com" target="_blank" title="MySQL - The World's Most Popular Open Source Database"><img src="./images/links_mysql.jpg" alt="small product photo" width="110" height="110" border="0" /></a></td>
+		  <td>&nbsp;</td>
+		  <td height="110"><a href="http://reviews.cnet.com" target="_blank" title="Latest Technology Reviews"><img src="./images/links_cnet.jpg" alt="Cnet Reviews" width="110" height="110" border="0" /></a></td>
+    </tr>
+		<tr>
+      <td valign="top" class="detailText"><a href="http://www.cepolina.com/freephoto/" target="_blank">Cepolina.com</a><br />&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://www.mozilla.com/firefox">Get Firefox Now!</a><br />&nbsp;</td>
+		 	<td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://www.mysql.com">MySQL</a><br />&nbsp;</td>
+		 	<td>&nbsp;</td>
+		  <td valign="top" class="detailText"><a href="http://reviews.cnet.com">cnet Reviews</a><br />&nbsp;</td>
+    </tr>
+		<tr>
+      <td height="110" colspan="7" align="left">
+				<!--- <a href="http://www.1and1.com/?k_id=10834206" target="_blank"><img src="http://banner.1and1.com/xml/banner?size=3&number=2" width="120" height="60"  border="0"/></a> --->
+				&nbsp;<a href="http://www.openoffice.org"><img src="http://marketing.openoffice.org/art/galleries/marketing/web_buttons/nicu/125x50_3_get.png" border="0" alt=" Use OpenOffice.org" title="Use OpenOffice.org"></a>
+			</td>
+    </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+      </table>
+	 <br />	</td>
+	<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<!-- <td width="15">&nbsp;</td> -->
+    <td colspan="3" width="760" align="left" id="footernav">&copy; 2012 2k3 Technologies, All rights reserved |
+		<a href="privacy.html">Privacy Policy</a> | <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Get Google Chrome</a> |
+		<a href="./sitemap.html">Site Map</a> | <span id="txt" class="footernav"></span></td>
+		<td width="100%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
